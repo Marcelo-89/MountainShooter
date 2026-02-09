@@ -10,6 +10,7 @@ class Enemy(Entity):
 
     def __init__(self, name: str, position: tuple):
             super().__init__(name, position)
+            self.last_dmg = None
             self.shot_delay = ENTITY_SHOT_DELAY[self.name]
 
     def move(self, ):
