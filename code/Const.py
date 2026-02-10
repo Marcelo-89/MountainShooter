@@ -80,8 +80,10 @@ ENTITY_DAMAGE = {
     'Enemy2': 1,
     'Enemy2Shot': 15,
 }
+
 ENTITY_SCORE = {
-'Level1Bg1' :0,
+    'Level1Bg0' : 0,
+    'Level1Bg1' : 0,
     'Level1Bg2' : 0,
     'Level1Bg3' : 0,
     'Level1Bg4' : 0,
@@ -101,6 +103,7 @@ ENTITY_SCORE = {
     'Enemy2': 125,
     'Enemy2Shot': 0,
 }
+
 ENTITY_SHOT_DELAY = {
     'Player1': 20,
     'Player2': 15,
@@ -151,4 +154,4 @@ SCORE_POS = {'Title': (WIN_WIDTH / 2, 50),
              7: (WIN_WIDTH / 2, 250),
              8: (WIN_WIDTH / 2, 270),
              9: (WIN_WIDTH / 2, 290),
-            }
+             }
