@@ -66,4 +66,4 @@ class EntityMediator:
             if ent.health <= 0:
                 if isinstance(ent, Enemy):
                     EntityMediator.__give_score(ent, entity_list)
-                entity_list.remover(ent)
+                entity_list.remove(ent)
