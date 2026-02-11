@@ -1,6 +1,7 @@
 import sys
 from datetime import datetime
 
+
 import pygame
 from pygame import Surface, Rect, KEYDOWN, K_RETURN, K_BACKSPACE, K_ESCAPE
 from pygame.font import Font
@@ -16,7 +17,7 @@ class Score:
         self.rect = self.surf.get_rect(left=0, top=0)
         pass
 
-    def save(self, game_mode:str,  player_score: list[int]):
+    def save(self, game_mode: str,  player_score: list[int]):
         pygame.mixer_music.load('./asset/Score.mp3')
         pygame.mixer_music.play(-1)
         db_proxy = DBProxy('DBScore')
@@ -30,7 +31,7 @@ class Score:
                 score = player_score[0]
             if game_mode == MENU_OPTION[1]:
                 score = (player_score[0] + player_score[1]) / 2
-                text = 'enter Team name (4 characters):'
+                text = 'Enter Team name (4 characters):'
             if game_mode == MENU_OPTION[2]:
                 if player_score[0] >= player_score[1]:
                    score = player_score[0]
