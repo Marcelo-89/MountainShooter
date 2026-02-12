@@ -3,7 +3,6 @@
 import sys
 
 import pygame
-from pygame import Surface
 
 from code.Const import WIN_WIDTH, WIN_HEIGHT, MENU_OPTION
 from code.Menu import Menu
@@ -41,4 +40,3 @@ class Game:
             else:
                 pygame.quit()
                 sys.exit()
-
